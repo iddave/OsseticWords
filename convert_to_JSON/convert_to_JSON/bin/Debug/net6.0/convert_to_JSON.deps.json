@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "convert_to_JSON/1.0.0": {
+        "runtime": {
+          "convert_to_JSON.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "convert_to_JSON/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

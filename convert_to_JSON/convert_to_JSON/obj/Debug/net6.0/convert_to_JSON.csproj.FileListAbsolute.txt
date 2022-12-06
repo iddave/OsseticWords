@@ -1,0 +1,15 @@
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\bin\Debug\net6.0\convert_to_JSON.exe
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\bin\Debug\net6.0\convert_to_JSON.deps.json
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\bin\Debug\net6.0\convert_to_JSON.runtimeconfig.json
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\bin\Debug\net6.0\convert_to_JSON.dll
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\bin\Debug\net6.0\convert_to_JSON.pdb
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.csproj.AssemblyReference.cache
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.AssemblyInfoInputs.cache
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.AssemblyInfo.cs
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.csproj.CoreCompileInputs.cache
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.dll
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\refint\convert_to_JSON.dll
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.pdb
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\convert_to_JSON.genruntimeconfig.cache
+C:\Users\lalie\source\repos\convert_to_JSON\convert_to_JSON\obj\Debug\net6.0\ref\convert_to_JSON.dll
