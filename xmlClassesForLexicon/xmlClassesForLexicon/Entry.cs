@@ -16,8 +16,13 @@ namespace xmlClassesForLexicon
         [XmlAttribute,
          XmlElement(ElementName = "xml:id")] // возможно неправильно задал имя атрибуту
         public string Id;
+
         [XmlAttribute,
          XmlElement(ElementName = "xml:lang")]
         public string Lang;
+
+        [XmlElement,
+         XmlArray("sense")]
+        public Sense[] Senses;
     }
 }

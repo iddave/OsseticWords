@@ -16,9 +16,10 @@ namespace xmlClassesForLexicon
         [XmlElement(ElementName = "type")]
         public string Type;
 
-        //[XmlArray("gramGrp"),
-        // XmlArrayItem("gram")]
-        //public Gram[] GramInfoGroup;
+        [XmlArray("gramGrp"),
+         XmlArrayItem("gram"),
+         XmlElement(IsNullable = false)] // будет ли отображаться корректно без данных gram
+        public Gram[] GramInfoGroup;
 
 
     }
