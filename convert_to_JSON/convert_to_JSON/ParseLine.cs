@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace convert_to_JSON
 {
-    internal class ParseLine
+    public class ParseLine
     {
         public static WordInfo GetWordInfo(string WordStr)
         {

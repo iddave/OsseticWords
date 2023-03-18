@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace convert_to_JSON
 {
-    internal class WordMeaning
+    public class WordMeaning
     {
         [JsonPropertyName("Переводы")]
         public List<string> RusWord { get; set; }
+
         [JsonPropertyName("Примеры")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public List<Tuple<string, string>>? Examples { get; set; }

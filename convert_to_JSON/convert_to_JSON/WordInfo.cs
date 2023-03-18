@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace convert_to_JSON
 {
-    internal class WordInfo
+    public class WordInfo
     {
         [JsonPropertyName("Осетинское слово")]
         public string IronWord { get; set; }
+
         [JsonPropertyName("Доп. слово")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? AdditionalIronW { get; set; }
+
         [JsonPropertyName("Значения")]
         public List<WordMeaning> Meanings { get; set; }
 
