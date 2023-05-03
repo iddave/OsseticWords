@@ -14,8 +14,8 @@ namespace convert_to_JSON
             var wMeanings = new List<WordMeaning>();
             var ar = WordStr.Split('/', StringSplitOptions.RemoveEmptyEntries);
             var wInfo = new WordInfo(ar[0]);
-            CheckSomething(WordStr);
-            if (ar.Count() < 3) throw new ArgumentException($"В строке чего-то не хватает");
+            CheckEvenAndSymb(WordStr);
+            if (ar.Count() < 3) throw new ArgumentException($"В строке {WordStr} чего-то не хватает");
             var seps = new char[] { '$', '#' };
             var means = ar[2].Split(seps, StringSplitOptions.RemoveEmptyEntries);
             foreach (var m in means)
@@ -63,8 +63,17 @@ namespace convert_to_JSON
                 var rusWords = s.Substring(0, ind).Trim(endSeps);
                 var examples = s.Substring(ind).Trim(endSeps);
                 //Console.WriteLine($"rus words: {rusWords} examples: {examples}");
-                rusWordsList = ParseRusWords(rusWords);
-                examplesList = ParseExamples(examples);
+                try
+                {
+                    rusWordsList = ParseRusWords(rusWords);
+                    examplesList = ParseExamples(examples);
+                }
+                catch (Exception e)
+                {
+                    rusWordsList.Add(rusWords);
+                    examplesList.Add(Tuple.Create("? ", examples));
+                    Console.WriteLine($"Ошибка - {e} в слове - {s}");
+                }
             }
             else
             {
@@ -88,18 +97,20 @@ namespace convert_to_JSON
             var result = new List<Tuple<string, string>>();
             var seps = new char[] { ',', ';', ' ' };
             var ar = s.Split('&', StringSplitOptions.RemoveEmptyEntries);
-            if (ar.Count() % 2 != 0) throw new ArgumentException($"||{ar[0]} ||");
+
+            if (s.StartsWith('&') && s.EndsWith('&')) result.Add(Tuple.Create("ссылка на слово",s));
+            else if (ar.Count() % 2 != 0) throw new ArgumentException($"что-то не так в примере употреблений: {s}");
+            
             for (int i = 0; i < ar.Count(); i += 2)
-            {
                 result.Add(Tuple.Create(ar[i].Trim(seps), ar[i + 1].Trim(seps)));
-            }
+            
             return result;
         }
 
-        static void CheckSomething(string s)
+        static void CheckEvenAndSymb(string s)
         {
             var count = s.Where(z => z == '&').Count();
-            if (count % 2 != 0) throw new ArgumentException("Нечетное количество &");
+            if (count % 2 != 0) throw new ArgumentException($"Нечетное количество & в слове {s}");
         }
     }
 }

@@ -11,9 +11,12 @@ using System.Xml;
 using System.Xml.Serialization;
 using xmlClassesForLexicon;
 
-var lines = GetLines(1);
+const int FilesCount = 24;
+bool all = true;
+var lines = GetLines(all); // из всех файлов
 var wordInfoList = new List<WordInfo>();
 var uniqueWords = new Dictionary<string, int>();
+
 foreach (var line in lines)
 {
     wordInfoList.Add(ParseLine.GetWordInfo(line));
@@ -31,13 +34,25 @@ foreach (var line in lines)
     }
 }
 
-XmlMethods.CreateBodyXml("osetExamples.xml", wordInfoList);
-XmlMethods.MergeAndSaveXml(); // соедииняет голову и тело
-//SerializeToJson();
+//// для конвертации в xml
+//XmlMethods.CreateBodyXml("osetExamples.xml", wordInfoList);
+//XmlMethods.MergeAndSaveXml(); // соедииняет голову и тело
 
-IEnumerable<string> GetLines(int fileNum)
+// для сериализации в json
+SerializeToJson(true);
+
+IEnumerable<string> GetLines(bool all = false, int fileNum = 1)
 {
-    var path = @"..\..\..\DictTxt\2.txt";
+
+    if (all)
+        for (int i = 1; i <= FilesCount; i++)
+           foreach(string s in GetLinesFromOne(i)) yield return s;
+    else foreach (string s in GetLinesFromOne(fileNum)) yield return s;
+}
+
+IEnumerable<string> GetLinesFromOne(int fileNum = 1)
+{
+    var path = @"..\..\..\DictTxt\" + fileNum.ToString() + ".txt"; // сохраняет в bin 
     using (StreamReader reader = new StreamReader(path))
     {
         string? line;
@@ -48,9 +63,10 @@ IEnumerable<string> GetLines(int fileNum)
     }
 }
 
-void SerializeToJson()
+void SerializeToJson(bool all = false, int num = 1)
 {
-    using (FileStream fs = new FileStream("test2Words1.json", FileMode.OpenOrCreate))
+    var fileName = all ? "AllOsetWords.json" : "OsetWords_from" + num.ToString() + ".json";
+    using (FileStream fs = new FileStream(fileName, FileMode.OpenOrCreate))
     {
         var options = new JsonSerializerOptions
         {
