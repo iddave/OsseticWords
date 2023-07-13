@@ -1,0 +1,27 @@
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title type="full">Lexicon Ossetic-Russian</title>
+            <title type="abbr">LOR</title>
+            <editor>
+                <persName>
+                    <forename>David</forename>
+                    <surname>Laliev</surname>
+                </persName>
+            </editor>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Publication Information</publisher>
+            <availability>
+                <licence target="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+                    Attribution 4.0 International (CC BY 4.0)</licence>
+            </availability>
+        </publicationStmt>
+    </fileDesc>
+    <profileDesc>
+        <langUsage>
+            <language ident="oss" role="sourceLanguage">Ossetic</language>
+            <language ident="ru" role="targetLanguage">Russian</language>
+        </langUsage>
+    </profileDesc>
+</teiHeader>
