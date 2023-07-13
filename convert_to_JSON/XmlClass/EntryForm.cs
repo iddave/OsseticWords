@@ -16,7 +16,7 @@ namespace xmlClassesForLexicon
         private string? _type;
 
         [XmlElement(ElementName = "orth")]
-        public string OrthographicForm;
+        public List<string> OrthographicForms;
 
         /// <summary>
         /// Несколько примеров значений:
@@ -38,18 +38,26 @@ namespace xmlClassesForLexicon
             return !string.IsNullOrEmpty(_type);
         }
 
-        public EntryForm(string orthographicForm, string? type = null) 
+        public EntryForm(List<string> orthographicForm, string? type = null) 
         {
-            OrthographicForm = orthographicForm;
+            OrthographicForms = new List<string>(orthographicForm);
             Type = type;
         }
 
-        //public EntryForm(string orthographicForm, GramGroup? gramGroup = null)
-        //{
-        //    OrthographicForm = orthographicForm;
-        //    GramInfoGroup = gramGroup;
-        //}
+        public EntryForm(string orthographicForm, string? type = null)
+        {
+            OrthographicForms = new List<string>
+            {
+                orthographicForm
+            };
+            Type = type;
+        }
 
         public EntryForm() { }
+
+        public void AddOrthographicForm(string orth)
+        {
+            OrthographicForms.Add(orth);
+        }
     }
 }

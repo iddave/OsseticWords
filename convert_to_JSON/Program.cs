@@ -16,25 +16,25 @@ var wordInfoList = jsonParser.UpdateWordsInfo(TxtDictionaryParser.Parse());
 var testSubList = wordInfoList.GetRange(0, 20);
 string  bodyNameXML = "osetWordsBody.xml",
         testBodyNameXML = "testWordsBody.xml",
-        output = "XMLOssetWords.xml",
+        output = "XML_OssetWords.xml",
         testOutput = "XML_mini_words_test.xml";
 
-//// для конвертации в xml
-//XmlMethods.CreateBodyXml(bodyNameXML, wordInfoList);
-//XmlMethods.MergeAndSaveXml(bodyNameXML, output); // соедииняет голову и тело
+// ДЛЯ КОНВЕРТАЦИИ В XML
+XmlMethods.CreateBodyXml(bodyNameXML, wordInfoList);
+XmlMethods.MergeAndSaveXml(bodyNameXML, output); // соедииняет голову и тело
 
-////для сериализации в json
-//SerializeToJson(true);
+////ДЛЯ СЕРИАЛИЗАЦИИ В JSON
+SerializeToJson(true);
 
-//test
-XmlMethods.CreateBodyXml(testBodyNameXML, testSubList);
-XmlMethods.MergeAndSaveXml(testBodyNameXML, testOutput); // соедииняет голову и тело
+//TEST
+//XmlMethods.CreateBodyXml(testBodyNameXML, testSubList);
+//XmlMethods.MergeAndSaveXml(testBodyNameXML, testOutput); // соедииняет голову и тело
 
 
 
 void SerializeToJson(bool all = false, int num = 1)
 {
-    var fileName = all ? "JSONOssetWords.json" : "OsetWords_from" + num.ToString() + ".json";
+    var fileName = all ? "JSON_OssetWords.json" : "OsetWords_from" + num.ToString() + ".json";
     var path = @"..\..\..\output\" + fileName;
     using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate))
     {

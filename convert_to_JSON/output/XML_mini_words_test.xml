@@ -1,5 +1,4 @@
 <?xml-model href="https://raw.githubusercontent.com/DARIAH-ERIC/lexicalresources/master/Schemas/TEILex0/out/TEILex0.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/xsl" href="teibp.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
@@ -34,27 +33,19 @@
         <form type="lemma">
           <orth>а</orth>
         </form>
-        <sense xml:id="а.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>этот</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>это</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>эта</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.а.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>ай</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>this</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">PRON</gram>
             <gram type="pos/aspect/case...">dem</gram>
@@ -63,33 +54,16 @@
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>this</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>этот</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="а-" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>а-</orth>
         </form>
-        <sense xml:id="а-.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>приставка</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>придающая значение совершенного вида</orth>
             </form>
           </cit>
@@ -106,14 +80,10 @@
             </cit>
           </cit>
         </sense>
-        <sense xml:id="а-.1">
+        <sense n="2">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>приставка</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>выражающая движение в направлении от говорящего</orth>
             </form>
           </cit>
@@ -124,14 +94,10 @@
             </cit>
           </cit>
         </sense>
-        <sense xml:id="а-.2">
+        <sense n="3">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>приставка</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>выражающая быстрое и поверхностное действие</orth>
             </form>
           </cit>
@@ -142,83 +108,44 @@
             </cit>
           </cit>
         </sense>
-        <entry xml:id="UNIP.а-.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>ай</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">PRON</gram>
-            <gram type="pos/aspect/case...">dem</gram>
-            <gram type="pos/aspect/case...">prox</gram>
-            <gram type="pos/aspect/case...">3</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>this</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>этот</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="абабау" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абабау</orth>
         </form>
-        <sense xml:id="абабау.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>ни-ни</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абабау.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>aбабау</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>don't</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">INTJ</gram>
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>don't</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>ни-ни</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абази" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абази</orth>
         </form>
-        <sense xml:id="абази.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>двугривенный</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абази.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абази</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>twenty-copeck coin</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">N</gram>
             <gram type="pos/aspect/case...">inanim</gram>
@@ -226,36 +153,23 @@
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>twenty-copeck coin</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>абаз(монета); двугривенный</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абана" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абана</orth>
         </form>
-        <sense xml:id="абана.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>баня</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абана.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абана</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>baths</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">N</gram>
             <gram type="pos/aspect/case...">inanim</gram>
@@ -263,26 +177,13 @@
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>baths</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>баня</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абаргӕ" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абаргӕ</orth>
         </form>
-        <sense xml:id="абаргӕ.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>сравнительный</orth>
@@ -295,272 +196,35 @@
             </cit>
           </cit>
         </sense>
-        <entry xml:id="UNIP.абаргӕ.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абаргӕ</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">ADJ</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[weight]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[весовой]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕ.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абаргӕ</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">inanim</gram>
-            <gram type="pos/aspect/case...">nonhuman</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>comparative</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>сравнительный</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕ.3" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[excuse, forgive]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[извинять, прощать]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕ.4" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[(perf) measure off; try on; measure; weigh; check (sth against sth); collate; compare; liken]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[отмерить; примерить; измерить; взвесить; сверить; сличить; сравнить; уподобить]</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕ.5" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[weight; measure; compare; make similar]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[взвешивать; измерять; сравнивать; уподоблять]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="абаргӕйӕ" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абаргӕйӕ</orth>
         </form>
-        <sense xml:id="абаргӕйӕ.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>сравнительно</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>относительно</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.абаргӕйӕ.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абаргӕ</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">inanim</gram>
-            <gram type="pos/aspect/case...">nonhuman</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">abl</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>comparative</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>сравнительный</orth>
-              </form>
-            </cit>
-            <gloss>STEM-ABL</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕйӕ.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">abl</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[(perf) measure off; try on; measure; weigh; check (sth against sth); collate; compare; liken]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[отмерить; примерить; измерить; взвесить; сверить; сличить; сравнить; уподобить]</orth>
-              </form>
-            </cit>
-            <gloss>STEM-ABL</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕйӕ.3" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">abl</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[excuse, forgive]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[извинять, прощать]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM-ABL</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абаргӕйӕ.4" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абарын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">ptcp.gae</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">abl</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[weight; measure; compare; make similar]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[взвешивать; измерять; сравнивать; уподоблять]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM-ABL</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="абетӕ" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абетӕ</orth>
         </form>
-        <sense xml:id="абетӕ.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>азбука</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абетӕ.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абетӕ</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>alphabet</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">N</gram>
             <gram type="pos/aspect/case...">inanim</gram>
@@ -569,29 +233,21 @@
             <gram type="pos/aspect/case...">pl</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>alphabet</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>азбука</orth>
-              </form>
-            </cit>
-            <gloss>STEM-PL</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абон" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абон</orth>
         </form>
-        <sense xml:id="абон.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>сегодня</orth>
+            </form>
+          </cit>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>today</orth>
             </form>
           </cit>
           <cit type="example">
@@ -600,307 +256,86 @@
               <quote>отныне, с сегодняшнего дня</quote>
             </cit>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абон.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абон</orth>
-          </form>
           <gramGrp>
             <gram type="pos/aspect/case...">ADV</gram>
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>today</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>сегодня</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абондӕргъы" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абондӕргъы</orth>
         </form>
-        <sense xml:id="абондӕргъы.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>в течение сегодняшнего дня</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>целый день</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абондӕргъы.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абондӕргъы</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>the whole day</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">ADV</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>the whole day</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>целый день</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абонон" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абонон</orth>
         </form>
-        <sense xml:id="абонон.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>сегодняшний</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.абонон.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абонон</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">ADJ</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[strength; ability, possibility]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[сила; возможность]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абонон.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абонон</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">ADJ</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[today]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[сегодня]</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абонон.3" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абонон</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">ADJ</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[day]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[день]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="абоныккон" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абоныккон</orth>
         </form>
-        <sense xml:id="абоныккон.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>сегодняшний</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.абоныккон.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абоныккон</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>today's</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">ADJ</gram>
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>today's</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>сегодняшний</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="абырӕг" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>абырӕг</orth>
         </form>
-        <sense xml:id="абырӕг.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>абрек</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>разбойник</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.абырӕг.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абырӕг</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[larva]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[личинка]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM-SUFF</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абырӕг.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абырӕг</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">anim</gram>
-            <gram type="pos/aspect/case...">human</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>robber</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>разбойник</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абырӕг.3" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абырын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">intr</gram>
-            <gram type="pos/aspect/case...">pv</gram>
-            <gram type="pos/aspect/case...">pv_a</gram>
-            <gram type="pos/aspect/case...">ptcp.aeg</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[crawl; slide; skate; drag oneself along; glovel]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[ползать; скользить; кататься (на коньках); плестись, медленно идти; пресмыкаться]</orth>
-              </form>
-            </cit>
-            <gloss>PV-STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.абырӕг.4" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>абырын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">intr</gram>
-            <gram type="pos/aspect/case...">ptcp.aeg</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[V-ptcp]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[(perf) crawl away, start crawling; sled, start sledding; scold; get lucky; colloq. scold severely; beat up]</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="авг" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>авг</orth>
         </form>
-        <sense xml:id="авг.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>стекло</orth>
@@ -913,87 +348,45 @@
             </cit>
           </cit>
         </sense>
-        <sense xml:id="авг.1">
+        <sense n="2">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>бутылка</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.авг.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авг</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">inanim</gram>
-            <gram type="pos/aspect/case...">nonhuman</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>glass; bottle</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>стекло; бутылка</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="авд" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>авд</orth>
         </form>
-        <sense xml:id="авд.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>семь</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.авд.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авд</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>seven</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">NUM</gram>
             <gram type="pos/aspect/case...">card</gram>
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>seven</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>семь</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="авдӕн" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>авдӕн</orth>
         </form>
-        <sense xml:id="авдӕн.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>колыбель</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>люлька</orth>
             </form>
           </cit>
@@ -1004,76 +397,18 @@
             </cit>
           </cit>
         </sense>
-        <entry xml:id="UNIP.авдӕн.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авд</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">NUM</gram>
-            <gram type="pos/aspect/case...">card</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">dat</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>seven</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>семь</orth>
-              </form>
-            </cit>
-            <gloss>STEM-DAT</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.авдӕн.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авдӕн</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">inanim</gram>
-            <gram type="pos/aspect/case...">nonhuman</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>cradle</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>колыбель, люлька</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="авдӕнбӕттӕн" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>авдӕнбӕттӕн</orth>
         </form>
-        <sense xml:id="авдӕнбӕттӕн.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>день</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>когда укладывают ребенка впервые в люльку</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.авдӕнбӕттӕн.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авдӕнбӕттӕн</orth>
-          </form>
           <gramGrp>
             <gram type="pos/aspect/case...">N</gram>
             <gram type="pos/aspect/case...">inanim</gram>
@@ -1081,85 +416,43 @@
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth />
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>день, когда укладывают впервые ребенка в люльку; угощение по поводу укладывания ребенка в люльку</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="авджын" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>авджын</orth>
         </form>
-        <sense xml:id="авджын.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>стеклянный</orth>
             </form>
           </cit>
         </sense>
-        <sense xml:id="авджын.1">
+        <sense n="2">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>фаянсовый</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>фарфоровый</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.авджын.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>авджын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">N</gram>
-            <gram type="pos/aspect/case...">inanim</gram>
-            <gram type="pos/aspect/case...">nonhuman</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>from glass; china</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>стеклянный; фарфоровый</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
       <entry xml:id="аг" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>аг</orth>
         </form>
-        <sense xml:id="аг.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>котел</orth>
             </form>
           </cit>
-        </sense>
-        <entry xml:id="UNIP.аг.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>аг</orth>
-          </form>
+          <cit type="translationEquivalent" xml:lang="en">
+            <form>
+              <orth>lubricant for weapons</orth>
+            </form>
+          </cit>
           <gramGrp>
             <gram type="pos/aspect/case...">N</gram>
             <gram type="pos/aspect/case...">inanim</gram>
@@ -1167,38 +460,21 @@
             <gram type="pos/aspect/case...">sg</gram>
             <gram type="pos/aspect/case...">nom</gram>
           </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>lubricant for weapons</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>котел</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
+        </sense>
       </entry>
       <entry xml:id="агайын" type="mainEntry" xml:lang="oss">
         <form type="lemma">
           <orth>агайын</orth>
         </form>
-        <sense xml:id="агайын.0">
+        <sense n="1">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>трогать</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>прикасаться</orth>
             </form>
           </cit>
         </sense>
-        <sense xml:id="агайын.1">
+        <sense n="2">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>раздражать</orth>
@@ -1211,118 +487,30 @@
             </cit>
           </cit>
         </sense>
-        <sense xml:id="агайын.2">
+        <sense n="3">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>беспокоить</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>тормошить</orth>
             </form>
           </cit>
         </sense>
-        <sense xml:id="агайын.3">
+        <sense n="4">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>мчаться</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>нестись</orth>
             </form>
           </cit>
         </sense>
-        <sense xml:id="агайын.4">
+        <sense n="5">
           <cit type="translationEquivalent" xml:lang="ru">
             <form>
               <orth>волноваться</orth>
-            </form>
-          </cit>
-          <cit type="translationEquivalent" xml:lang="ru">
-            <form>
               <orth>расстраиваться</orth>
             </form>
           </cit>
         </sense>
-        <entry xml:id="UNIP.агайын.1" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>агайын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">inf</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[touch; irritate; worry; rush, gallop; upset]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[трогать; раздражать; беспокоить; мчаться, пускаться вскачь; волновать, расстраивать]</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.агайын.2" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>агайын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">prs</gram>
-            <gram type="pos/aspect/case...">1</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>touch; irritate; worry; rush, gallop; upset</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>трогать; раздражать; беспокоить; мчаться, пускаться вскачь; волновать, расстраивать</orth>
-              </form>
-            </cit>
-            <gloss>STEM-PRS.1SG</gloss>
-          </sense>
-        </entry>
-        <entry xml:id="UNIP.агайын.3" type="relatedEntry" xml:lang="oss">
-          <form type="lemma">
-            <orth>агайын</orth>
-          </form>
-          <gramGrp>
-            <gram type="pos/aspect/case...">V</gram>
-            <gram type="pos/aspect/case...">tr</gram>
-            <gram type="pos/aspect/case...">inf</gram>
-            <gram type="pos/aspect/case...">ptcp.pst</gram>
-            <gram type="pos/aspect/case...">sg</gram>
-            <gram type="pos/aspect/case...">nom</gram>
-          </gramGrp>
-          <sense>
-            <cit type="translationEquivalent" xml:lang="en">
-              <form>
-                <orth>[touch; irritate; worry; rush, gallop; upset]</orth>
-              </form>
-            </cit>
-            <cit type="translationEquivalent" xml:lang="ru">
-              <form>
-                <orth>[трогать; раздражать; беспокоить; мчаться, пускаться вскачь; волновать, расстраивать]</orth>
-              </form>
-            </cit>
-            <gloss>STEM</gloss>
-          </sense>
-        </entry>
       </entry>
     </body>
   </text>

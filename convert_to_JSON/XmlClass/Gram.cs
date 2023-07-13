@@ -10,17 +10,22 @@ namespace xmlClassesForLexicon
     [XmlRoot("gram")]
     public class Gram
     {
-        [XmlAttribute("type")]
-        public string Type;
+        //[XmlAttribute("type")]
+        //public string Type;
 
         [XmlText]
         public string Value;
 
-        public Gram(string type, string value)
+        public Gram( string value)
         {
-            Type = type;
             Value = value;
         }
+
+        //public Gram(string type, string value)
+        //{
+        //    Type = type;
+        //    Value = value;
+        //}
 
         public Gram() { }
     }

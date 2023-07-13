@@ -13,13 +13,8 @@ namespace xmlClassesForLexicon
     [XmlRoot("sense")]
     public class Sense
     {
-        private string _id;
-        [XmlAttribute("xml:id")] 
-        public string Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        [XmlAttribute("n")]
+        public string Number;
 
         /// <summary>
         /// если у значения несколько переводов то они будут представлять собой последовательность cit елементов 
@@ -27,17 +22,21 @@ namespace xmlClassesForLexicon
         [XmlElement("cit", IsNullable = false)]
         public List<Cit> Cits;
 
+        [XmlElement("gramGrp", IsNullable = false)]
+        public GramGroup? GramInfoGroup;
+
         [XmlElement("gloss", IsNullable = false)]
         public string? Gloss;
 
         public bool ShouldSerializeId()
         {
-            return !string.IsNullOrEmpty(Id);
+            return !string.IsNullOrEmpty(Number);
         }
 
-        public Sense(string id, List<Cit> cits, string? gloss = null)
+        public Sense(List<Cit> cits, GramGroup gramInfoGroup = null, string? gloss = null, string num = "1")
         {
-            Id = id;
+            GramInfoGroup = gramInfoGroup;
+            Number = num;
             Cits = cits;
             Gloss = gloss;
         }

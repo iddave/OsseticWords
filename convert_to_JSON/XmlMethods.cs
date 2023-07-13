@@ -65,24 +65,24 @@ namespace convert_to_JSON
                 var entrySenses = new List<Sense>();
                 var additionalEntries = new List<Entry>();
 
-                AddSenses(wordInfo.Meanings, entrySenses, entryID);
-                AddAdditionalEntries(additionalEntries, wordInfo);
+                AddSenses(wordInfo, entrySenses);
+                //AddAdditionalEntries(additionalEntries, wordInfo);
 
                 entries.Add(new Entry(entryForm,
                                       entryID,
                                       entryTypeMain,
                                       entryLang,
-                                      entrySenses,
-                                      null,
-                                      additionalEntries));
+                                      entrySenses));
             }
         }
 
-        public static void AddSenses(List<WordMeaning> wordMeanings, List<Sense> entrySenses, string entryID)
+
+        public static void AddSenses(WordInfo wordInfo, List<Sense> entrySenses)
         {
+            var wordMeanings = wordInfo.Meanings;
             for (int i = 0; i < wordMeanings.Count(); i++)
             {
-                var senseID = entryID + '.' + i;
+                
                 var senseTranlations = new List<Cit>();
                 var senseExamples = new List<Cit>();
 
@@ -90,19 +90,38 @@ namespace convert_to_JSON
                 if (wordMeanings[i].Examples != null)
                     AddExamples(wordMeanings[i].Examples, senseExamples);
 
+                GramGroup gramGroup = null;
+                if (wordInfo.UniparsedTokens.Count() == 1
+                && wordMeanings.Count() == 1)
+                {
+                    gramGroup = GetGramGroupForUniparsed(wordInfo.UniparsedTokens[0]);
+                    AddTranslationsFromUniparser(wordInfo.UniparsedTokens[0], senseTranlations);
+                }
+
                 ///переводы и примеры имеют один уровень иерархии и идут друг за другом. Сначала все переводы, потом все примеры.
                 senseTranlations.AddRange(senseExamples); 
-                entrySenses.Add(new Sense(senseID, senseTranlations));
+                entrySenses.Add(new Sense(senseTranlations, gramGroup, null, (i + 1).ToString()));
             }
         }
 
         public static void AddTranslations(List<string> rusWords, List<Cit> senseTranlations)
         {
+            var translations = new List<string>();
             foreach (var translation in rusWords)
             {
-                var translForm = new EntryForm(translation);
-                var translCit = new Cit("translationEquivalent", translForm, "ru");
+                translations.Add(translation);
+            }
+            var translForm = new EntryForm(translations);
+            var translCit = new Cit("translationEquivalent", translForm, "ru");
+            senseTranlations.Add(translCit);
+        }
 
+        public static void AddTranslationsFromUniparser(UniparsedInfo token, List<Cit> senseTranlations)
+        {
+            if (token.EnTranslation != null && !string.IsNullOrEmpty(token.EnTranslation.Trim()))
+            {
+                var translForm = new EntryForm(token.EnTranslation);
+                var translCit = new Cit("translationEquivalent", translForm, "en");
                 senseTranlations.Add(translCit);
             }
         }
@@ -119,62 +138,16 @@ namespace convert_to_JSON
                 senseExamples.Add(exmpCit);
             }
         }
-    
-        public static void AddAdditionalEntries(List<Entry> additionalEntries, WordInfo wordInfo)
-        {
-            var entryID = "UNIP."+wordInfo.IronWord;
-            var entryLang = "oss";
-            var entryTypeRelated = "relatedEntry";
-
-            var subentryInd = 1;
-            foreach (var token in wordInfo.UniparsedTokens)
-            {
-                var newEntryID = entryID + '.' + subentryInd;
-                var entryForm = new EntryForm(token.Lemma, "lemma");
-                var entrySense = new List<Sense>();
-                var gramGroup = GetGramGroupForUniparsed(token);
-
-                AddSenseForUniparsed(entrySense, token);
-
-                additionalEntries.Add(new Entry(entryForm,
-                                                newEntryID,
-                                                entryTypeRelated,
-                                                entryLang,
-                                                entrySense,
-                                                gramGroup));
-                subentryInd++;
-            }
-        }
-
-        public static void AddSenseForUniparsed(List<Sense> entrySense, UniparsedInfo uniparsedInfo)
-        {
-            var translationEn = new Cit();
-            var translationRu = new Cit();
-            var translations = GetTranslationsForUniparsed(uniparsedInfo);
-
-            entrySense.Add(new Sense(translations, uniparsedInfo.Gloss));
-        }
-
-        public static List<Cit>? GetTranslationsForUniparsed(UniparsedInfo uniparsedInfo)
-        {
-            var translations = new List<Cit>();
-            var enWord = uniparsedInfo.EnTranslation;
-            var ruWord = uniparsedInfo.RuTranslation;
-            if (enWord != null)
-                translations.Add(new Cit("translationEquivalent", new EntryForm(enWord), "en"));
-            if (ruWord != null)
-                translations.Add(new Cit("translationEquivalent", new EntryForm(ruWord), "ru"));
-            return translations.Count() == 0 ? null : translations;
-        }
 
         public static GramGroup GetGramGroupForUniparsed(UniparsedInfo uniparsedInfo)
         {
-            var jsonParser = new JSONParser();
-            var gramTagsDictionary = jsonParser.GetGramTagsType();
+            //var jsonParser = new JSONParser();
+            //var gramTagsDictionary = jsonParser.GetGramTagsType();
             var gramGroup = new GramGroup();
             foreach(var gramTag in uniparsedInfo.Gramm.Split(','))
             {
-                var gram = new Gram(gramTagsDictionary[gramTag], gramTag);
+                //var gram = new Gram(gramTagsDictionary[gramTag], gramTag);
+                var gram = new Gram(gramTag);
                 gramGroup.AddGram(gram);
             }
             return gramGroup;

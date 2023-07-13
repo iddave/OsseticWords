@@ -24,38 +24,26 @@ namespace xmlClassesForLexicon
         [XmlAttribute("xml:lang")]
         public string Lang;
 
-        [XmlElement("gramGrp", IsNullable = false)]
-        public GramGroup? GramInfoGroup;
+        
 
         [XmlElement("sense")] // null?
         public List<Sense> Senses;
-
-        [XmlElement("entry", IsNullable = false)]
-        public List<Entry>? AdditionalEntries;
-
 
         public Entry(EntryForm formInformationGroup,
                     string id,
                     string type,
                     string lang,
-                    List<Sense> senses,
-                    GramGroup? gramInfoGroup = null,
-                    List<Entry>? additionalEntries = null)
+                    List<Sense> senses)
         {
             FormInformationGroup = formInformationGroup;
             Id = id;
             Type = type;
             Lang = lang;
             Senses = senses;
-            GramInfoGroup = gramInfoGroup;
-            AdditionalEntries = additionalEntries;
+            
         }
 
         public Entry() { }
 
-        public void AddEntry(Entry entry)
-        {
-            AdditionalEntries.Add(entry);
-        }
     }
 }
